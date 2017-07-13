@@ -1,0 +1,22 @@
+{
+  "name": "chris",
+  "version": "1.0.0",
+  "description": "### Base Challenges - Build an Express App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccpinotti/express-intro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ccpinotti/express-intro/issues"
+  },
+  "homepage": "https://github.com/ccpinotti/express-intro#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
