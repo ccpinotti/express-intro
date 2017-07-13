@@ -16,6 +16,11 @@
       artist: 'letlive.'
     }
   ];
+  var taquerias = [
+    { name: "La Taqueria" },
+    { name: "El Farolito" },
+    { name: "Taqueria Cancun" }
+  ];
 
   // Allow CORS: we'll use this today to reduce security so we can more easily test our code in the browser.
   app.use(function(req, res, next) {
@@ -32,7 +37,11 @@
   });
   app.get('/api/albums', function (req, res) {
     res.json(albums)
-  })
+  });
+  app.get('/api/taquerias', function (req, res) {
+    res.json(taquerias);
+  });
+  app.use(express.static('public'));
   // this line of code is listening for an external server or local server
   app.listen(process.env.PORT || 3000, function () {
     console.log('Example app listening at http://localhost:3000/');
